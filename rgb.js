@@ -182,7 +182,7 @@ CheckColor()
 function reset()
 {
 win.innerHTML=' '
-status.innerHTML=''
+status.innerHTML=' ';
 
 colors=generateColors(6);
 
