@@ -1,7 +1,6 @@
 var allSquares=document.querySelectorAll(".square")
 var colors=generateColors(6)
-/*rc=["rgb(120, 50, 180)","rgb(120, 50, 15)","rgb(120, 250, 150)","rgb(52, 50, 18)","rgb(12, 50, 15)","rgb(120, 50, 150)","rgb(12, 120, 255)"]
-randomColor=['red','green','yellow','pink','black','orange']*/
+
 var colorDisplay =document.getElementById("colorDisplay")
 var pickColor=	pickColors()
 colorDisplay.textContent=pickColor;
