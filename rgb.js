@@ -137,7 +137,7 @@ if(ele.style.backgroundColor ==colorDisplay.textContent)
 
 {
 status.innerHTML='You win'
-win.innerHTML="win"
+win.innerHTML="You got it !!!"
 win.style.color='green'
 
 gameStatus.style.transition='all 2s ease-in-out';
@@ -159,7 +159,7 @@ ele.style.backgroundColor=colorDisplay.textContent
 }
 
 else{
-win.innerHTML="try again !!"
+win.innerHTML="Try again !!!"
 win.style.color='red'
 console.log('no',colorDisplay.textContent)
 this.classList.add("noColor")
