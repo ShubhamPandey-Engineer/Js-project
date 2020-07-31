@@ -75,7 +75,7 @@ allSquares[i].style.background=colors[i];
 
 easy.addEventListener("click",function(){
 win.innerHTML=' '
-status.innerHTML=' ';
+status.innerHTML='New color ';
 easy.classList.add('isactive')
 hard.classList.remove('isactive')
 colors=generateColors(3);
@@ -102,7 +102,7 @@ allSquares[i].style.display='none'
 
 hard.addEventListener("click",function(){
 win.innerHTML=' '
-
+status.innerHTML='New color'
 easy.classList.remove('isactive')
 hard.classList.add('isactive')
 colors=generateColors(6);
@@ -182,7 +182,7 @@ CheckColor()
 function reset()
 {
 win.innerHTML=' '
-
+status.innerHTML=''
 
 colors=generateColors(6);
 
