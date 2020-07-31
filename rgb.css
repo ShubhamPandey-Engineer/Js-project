@@ -1,0 +1,187 @@
+*{
+
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#color{
+
+	animation:ch 2s infinite ;
+}
+@keyframes ch{
+	16%{
+		color:purple;
+	}
+	50%{
+		color:skyblue
+	}
+	65%{
+		color:yellow;
+	}
+	85%{
+		color:orange;
+	}
+	100%{
+		color:navy;
+	}
+}
+
+::root{
+	--primaryColor:steelblue;
+}
+
+.container{
+	margin:auto;
+	width:100%;
+	transition:all 2s ease-in-out;
+display: table;
+background:rgba(0,0,0,1);
+	text-align: center;
+	align-content: center;
+	align-items: center;
+}
+#colorDisplay{
+	padding:8px;
+	color:#FFF;
+
+}
+h2{
+	font-weight: bolder;
+	padding:5px;
+	color:steelblue;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.isactive{
+	background-color: steelblue;
+}
+
+.notactive{
+	display: none;
+	transition:all .7s linear;
+}
+
+button{
+	text-align: center;
+width:150px;
+background-color: #000;
+color:#FFF;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.tabs{
+margin:auto;
+align-items: center;
+align-content: center;
+	width:50%;
+
+	display: flex;
+}
+.tabs button{
+	padding: 8px;
+	border-radius: 5px;
+	margin:5px;
+}
+.right{
+
+}
+
+#win{
+	
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	width:150px;
+}
+li{
+	list-style: none;
+}
+.square{
+	background-color: yellow;
+	padding-bottom: 20%;
+	margin:1.6%;
+		transition:all .8s linear;
+
+	float: left;
+	border-radius: 15px;
+	width:30%;
+}
+
+.game-status{
+position: absolute;
+text-align: center;
+background-color: #FFF;
+color:darkgreen;
+font-weight:bolder;
+width:80%;
+left:10%;
+box-shadow: 0px 0px 5px green;
+border-radius: 8px;
+line-height:85px;
+display: none;
+height:-20px;
+vertical-align: middle;
+transition:all 2s ease-in-out !important;
+transform:translateX(25%);
+margin:auto;
+}
+
+#status{
+z-index: 1;
+	position: relative;
+}
+#status:before{
+	content: ' ';
+position:absolute;
+z-index: -1;
+width:100%;
+height:100%;
+transform:scaleX(0);
+	background-color: steelblue	;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom: 0px;
+	transform-origin: 0 0;
+			transition:all .5s ease-in-out ;
+
+}
+button:hover{
+	transition:all .5s linear;
+border:1px solid steelblue;
+}
+
+#status:hover:before{
+		transition:all .5s ease-in-out;
+
+	transform:scaleX(1);
+}
+.move-don{
+	display: block;
+	transition:all 2s	 ease-in-out;
+
+	transform:translateY(25%);
+}
+
+.noColor{
+	transition:display .4s linear;
+	background-color:white;
+}
+
+@media screen and (max-width:650px)
+{
+	.square{
+		text-align: center;
+		margin:auto;
+		position: relative;
+		left:10%;
+		width:55%;
+	}
+	.tabs{
+		position: relative;
+		left:-65px;
+	}
+}
