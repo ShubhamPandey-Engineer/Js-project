@@ -75,7 +75,7 @@ allSquares[i].style.background=colors[i];
 
 easy.addEventListener("click",function(){
 win.innerHTML=' '
-
+status.innerHTML=' ';
 easy.classList.add('isactive')
 hard.classList.remove('isactive')
 colors=generateColors(3);
@@ -136,7 +136,7 @@ console.log('you',ele.style.backgroundColor)
 if(ele.style.backgroundColor ==colorDisplay.textContent)
 
 {
-status.innerHTML='You win'
+status.innerHTML='Play again :)'
 win.innerHTML="You got it !!!"
 win.style.color='green'
 
